@@ -1,0 +1,15 @@
+app:
+  name: demo-backend-poi-backend-app
+  namespace: demo-backend
+  cluster: .apps.a1jxqhzp.eastus2.aroapp.io
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-deploy/demo-backend-backend
+  org: rhdh-deploy
+  name: demo-backend-backend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: demo-backend/poi-backend-app
+  tag: latest
